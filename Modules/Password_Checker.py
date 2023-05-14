@@ -31,6 +31,7 @@ print(faded_text)
 
 print(Fore.GREEN + " 	    	   Created by github/JustRandomHacker")
 print("")
+
 def request_api_data(query_char):
     url = 'https://api.pwnedpasswords.com/range/' + query_char
     res = requests.get(url)
@@ -58,22 +59,22 @@ def generate_password():
     return password
 
 def main():
-    password = input("Please enter your password to test: ")
+    password = input("\033[1mPlease enter your password to test:\033[0m ")
     count = pwned_api_check(password)
     if count:
-        print(f"The password '{password}' has been found {count} times in data breaches and is therefore compromised.")
-        choice = input("Would you like to generate a new secure password? (Y/N): ")
+        print(f"\033[1mThe password '{password}' has been found {count} times in data breaches and is therefore compromised.\033[0m")
+        choice = input("\033[1mWould you like to generate a new secure password? (Y/N):\033[0m ")
         if choice.lower() == 'y':
             new_password = generate_password()
             new_count = pwned_api_check(new_password)
             while new_count:
                 new_password = generate_password()
                 new_count = pwned_api_check(new_password)
-            print(f"The new secure password is: {new_password}")
+            print(f"\033[1mThe new secure password is: {new_password}\033[0m")
         else:
-            print("Please change your compromised password.")
+            print("\033[1mPlease change your compromised password.\033[0m")
     else:
-        print(f"The password '{password}' has not been found in data breaches and is therefore safe.")
+        print(f"\033[1mThe password '{password}' has not been found in data breaches and is therefore safe.\033[0m")
 
 if __name__ == '__main__':
     main()
