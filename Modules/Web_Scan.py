@@ -26,31 +26,36 @@ print(faded_text)
 print(Fore.GREEN + " 	    	   Created by github/JustRandomHacker")
 print("")
 
+def print_question(question):
+    print(f"\033[1m\033[95m{question}\033[0m")
 
 while True:
-    # Get the IP or URL of the web application from the user
-    url = input("Please enter the IP or URL of the web application: ")
+    
+    print_question("Please enter the IP or URL of the web application: ")
+    url = input()
 
-    # Nikto command
+    
     nikto_command = f"nikto -h {url}"
 
-    # Execute Nikto command
+    
     os.system(nikto_command)
 
-    # Ask the user if they want to continue
-    continuer = input("Do you want to perform another scan? (yes/no): ")
+    
+    print_question("Do you want to perform another scan? (yes/no): ")
+    continuer = input()
     if continuer.lower() != "yes":
-        # Ask the user if they want to perform a WPScan
-        wpscan = input("Do you want to perform a WPScan? (yes/no): ")
+        
+        print_question("Do you want to perform a WPScan? (yes/no): ")
+        wpscan = input()
         if wpscan.lower() == "yes":
-            # WPScan command
+            
             wpscan_command = f"wpscan --url {url}"
 
-            # Execute WPScan command
+            
             os.system(wpscan_command)
 
-        # Quit the script
+        
         break
 
-    # Clear the console
+    
     os.system('cls' if os.name == 'nt' else 'clear')
