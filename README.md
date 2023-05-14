@@ -48,18 +48,18 @@ pip install -r requirements.txt
 - <strong>Extremely user-friendly and easy to use</strong> ✔️
 
 ## 📷 Screenshots
-![ezgif-4-8bb1fbcf59](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/f01856a2-2f09-46db-bb8e-dda5df5447d8)
+![securibot](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/f383cafc-465a-4a0b-bb08-516d10405655)
 
 ### 👀 Recon 
-![RECON1](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/7f057716-3070-4d86-ae7b-224b081340ba)
+![RECON](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/575d9fc5-6344-4e12-9200-cde03bdb615d)
 ### ⚡ Web App Scanner
-![WEBAPP](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/a716ba2a-3bff-47a0-aad9-71b3ead33087)
+![webapp](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/9560b0e1-064b-4e0c-baf6-12b773a6f257)
 ### 🔍 OSINT
 ![SHODAN](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/4170da10-f7c2-4ec2-9bb1-87db50249d5b)
 ### 📋 CVE Finder
 ![CVE](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/b9bd6f6a-3727-49c2-a054-63bb2fb79f0e)
 ### 🔑 Password Checker
-![password](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/8e80e8e6-a03a-40c9-a583-a37da09b15f3)
+![PASSWORD](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/cfd37145-f657-4ee0-9a64-5e64488c690f)
 ### 💉 SQLi 
 ![sqli1](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/ca0386e5-21df-448f-aad7-5a54430e32f8)
 ![sqli2](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/d785fc1e-6a36-420c-9f01-418f8f883e49)
