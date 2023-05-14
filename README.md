@@ -1,4 +1,4 @@
-# <div align="center"> SecuriBot
+# <div align="center"> 🤖 SecuriBot 🤖
 <p align="center">
   <img src="https://img.shields.io/badge/python-v3.11.2-green">
   <img src="https://img.shields.io/badge/version-1.0-blue">
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 ## 📷 Screenshots
 ![securibot](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/f383cafc-465a-4a0b-bb08-516d10405655)
 
-### 👀 Recon 
+### 👁️ Recon 
 ![RECON](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/575d9fc5-6344-4e12-9200-cde03bdb615d)
 ### ⚡ Web App Scanner
 ![webapp](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/9560b0e1-064b-4e0c-baf6-12b773a6f257)
