@@ -27,60 +27,61 @@ print(faded_text)
 print(Fore.GREEN + " 	    	   Created by github/JustRandomHacker")
 print("")
 
+import re
+import os
+from termcolor import colored
+
 def main():
     while True:
-        # Ask the user for the network IP to scan and validate it
+        
         while True:
-            network_ip = input("Enter the network IP to scan (e.g. 192.168.0.0): ")
+            network_ip = input(colored("Enter the network IP to scan (e.g. 192.168.0.0): ", "yellow", attrs=["bold"]))
             if re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", network_ip):
                 break
-            print("Invalid IP entered. Please enter a valid IP address (e.g. 192.168.0.0)")
+            print(colored("Invalid IP entered. Please enter a valid IP address (e.g. 192.168.0.0)", "red", attrs=["bold"]))
 
-        # Ask the user for the network mask and validate it
+        
         while True:
-            mask = input("Enter the network mask in CIDR notation (e.g. 24): ")
+            mask = input(colored("Enter the network mask in CIDR notation (e.g. 24): ", "yellow", attrs=["bold"]))
             if re.match(r"^\d{1,2}$", mask) and int(mask) <= 32:
                 break
-            print("Invalid network mask entered. Please enter an integer between 1 and 32.")
+            print(colored("Invalid network mask entered. Please enter an integer between 1 and 32.", "red", attrs=["bold"]))
 
         network = f"{network_ip}/{mask}"
 
-        # Perform host discovery
+        
         os.system(f"nmap -sn {network}")
 
-                # Ask the user for the IP of the machine to scan and validate it
+        
         while True:
-            host_ip = input("Enter the IP address of the machine to scan: ")
+            host_ip = input(colored("Enter the IP address of the machine to scan: ", "yellow", attrs=["bold"]))
             if re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", host_ip):
                 break
-            print("The IP address entered is invalid. Please enter a valid IP address (e.g. 192.168.0.1)")
+            print(colored("The IP address entered is invalid. Please enter a valid IP address (e.g. 192.168.0.1)", "red", attrs=["bold"]))
 
-        # Launch port scan with XML output
+        
         os.system(f"nmap -p- -sV -oX scan.xml {host_ip}")
 
-        # Ask the user if they want to perform an exploit search with searchsploit
+        
         while True:
-            searchsploit = input("Do you want to perform an exploit search with searchsploit? (yes/no) ")
+            searchsploit = input(colored("Do you want to perform an exploit search with searchsploit? (yes/no) ", "yellow", attrs=["bold"]))
             if searchsploit in ["yes", "no"]:
                 break
-            print("Please enter 'yes' or 'no'.")
+            print(colored("Please enter 'yes' or 'no'.", "red", attrs=["bold"]))
 
-        # If the user chooses to perform the exploit search, run it from the XML file
+        
         if searchsploit == "yes":
             os.system(f"searchsploit -v --nmap scan.xml")
 
-        # Ask the user if they want to restart the script
+        
         while True:
-            restart = input("Do you want to restart the scan? (yes/no) ")
+            restart = input(colored("Do you want to restart the scan? (yes/no) ", "yellow", attrs=["bold"]))
             if restart in ["yes", "no"]:
                 break
-            print("Please enter 'yes' or 'no'.")
+            print(colored("Please enter 'yes' or 'no'.", "red", attrs=["bold"]))
 
         if restart != "yes":
             break
 
 if __name__ == "__main__":
     main()
-
-
-       
