@@ -18,25 +18,39 @@ banner = """
 """
 
 clear()
-
+class colors:
+    PURPLE = '\033[95m'
+    CYAN = '\033[96m'
+    DARKCYAN = '\033[36m'
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    END = '\033[0m'
 print("")
 faded_text = fade.purplepink(banner)
 print(faded_text)
 
-print(Fore.GREEN + " 	    	   Created by github/JustRandomHacker")
+print(colors.BOLD + colors.DARKCYAN + " 	    	   Created by github/JustRandomHacker")
 print("")
 
 while True:
-    print("*********************************")
-    print("[ 1 ] - RECON                   *")
-    print("[ 2 ] - WEB APP SCANNER         *")
-    print("[ 3 ] - OSINT / SHODAN          *")
-    print("[ 4 ] - CVE FINDER              *")
-    print("[ 5 ] - PASSWORD CHECKER        *")
-    print("[ 6 ] - SQL INJECTION           *")
-    print("[ 7 ] - Exit                    *")
-    print("*********************************")
-    choix = input("Select your option: ")
+    print(colors.BOLD + colors.PURPLE + "*********************************" + colors.END)
+    print(colors.BOLD + colors.PURPLE + "[ 1 ] - RECON                   *" + colors.END)
+    print(colors.BOLD + colors.PURPLE + "[ 2 ] - WEB APP SCANNER         *" + colors.END)
+    print(colors.BOLD + colors.PURPLE + "[ 3 ] - OSINT / SHODAN          *" + colors.END)
+    print(colors.BOLD + colors.PURPLE + "[ 4 ] - CVE FINDER              *" + colors.END)
+    print(colors.BOLD + colors.PURPLE + "[ 5 ] - PASSWORD CHECKER        *" + colors.END)
+    print(colors.BOLD + colors.PURPLE + "[ 6 ] - SQL INJECTION           *" + colors.END)
+    print(colors.BOLD + colors.RED + "[ 7 ] - Exit                    *" + colors.END)
+    print(colors.BOLD + colors.PURPLE + "*********************************" + colors.END)
+    
+    
+    choix = input(colors.BOLD + "Select your option: " + colors.END)
+    
+    
     if choix == "1":
         os.system("python Modules/Recon.py")
     elif choix == "2":
@@ -51,7 +65,7 @@ while True:
         os.system("python Modules/SQLi.py")   
     elif choix == "7":
         print("")
-        print("Thanks for using my script :D, have a nice day !")
+        print(colors.BOLD + "Thanks for using my script :D, have a nice day !" + colors.END)
         break
     else:
-        print("Wrong option. Please, use a correct option (1 to 5).")
+        print(colors.BOLD + colors.RED + "Wrong option. Please, use a correct option (1 to 7)." + colors.END)
