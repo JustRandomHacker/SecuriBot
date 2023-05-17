@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 ### 👁️ Recon 
 ![RECON](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/575d9fc5-6344-4e12-9200-cde03bdb615d)
-### ⚡ Web App Scanner
+### 👨🏻‍💻 Web App Scanner
 ![webapp](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/9560b0e1-064b-4e0c-baf6-12b773a6f257)
 ### 🔍 OSINT
 ![SHODAN](https://github.com/JustRandomHacker/SecuriBot/assets/120188003/4170da10-f7c2-4ec2-9bb1-87db50249d5b)
