@@ -1,3 +1,8 @@
+<h1 align="center">
+  <br>
+  <a href="https://github.com/JustRandomHacker/SecuriBot"><img src="https://github.com/JustRandomHacker/SecuriBot/assets/120188003/16aacdae-5f39-4723-b538-8fba628d8299" alt="SecuriBot"></a>
+</h1>
+
 # <div align="center"> ![Typing SVG](https://readme-typing-svg.demolab.com?font=&weight=900&size=43&pause=1000&color=A913F7&center=true&multiline=true&width=435&height=70&lines=%F0%9F%A4%96+SECURIBOT+%F0%9F%A4%96)
 <p align="center">
   <img src="https://img.shields.io/badge/python-v3.11.2-green">
