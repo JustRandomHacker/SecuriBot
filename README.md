@@ -3,7 +3,7 @@
   <a href="https://github.com/JustRandomHacker/SecuriBot"><img src="https://github.com/JustRandomHacker/SecuriBot/assets/120188003/16aacdae-5f39-4723-b538-8fba628d8299" alt="SecuriBot"></a>
 </h1>
 
-# <div align="center"> ![Typing SVG](https://readme-typing-svg.demolab.com?font=&weight=900&size=43&pause=1000&color=A913F7&center=true&multiline=true&width=435&height=70&lines=%F0%9F%A4%96+SECURIBOT+%F0%9F%A4%96)
+# <div align="center"> [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=45&pause=1000&color=BA47F7&center=true&width=435&height=65&lines=%F0%9F%A4%96%7C%F0%9D%90%92%F0%9D%90%84%F0%9D%90%82%F0%9D%90%94%F0%9D%90%91%F0%9D%90%88%F0%9D%90%81%F0%9D%90%8E%F0%9D%90%93%7C%F0%9F%A4%96)](https://git.io/typing-svg)
 <p align="center">
   <img src="https://img.shields.io/badge/python-v3.11.2-green">
   <img src="https://img.shields.io/badge/version-1.0-blue">
